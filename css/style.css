@@ -1,0 +1,18 @@
+body,
+.jumbotron {
+	background-color: rgb(10, 25, 47);
+}
+.jumbotron p:first-of-type {
+	color: rgb(100, 255, 218);
+}
+.jumbotron .display-4 {
+	color: rgb(204, 214, 246);
+}
+#full-stack,
+.pl-4 {
+	color: rgb(204, 214, 246);
+}
+div img {
+	height: 350px;
+	width: 400px;
+}
