@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girma's Page</title>
+    <title>Girma's Page</title>   
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -19,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active ml-2">
-                <a class="nav-link " href="#">About<span class="sr-only">(current)</span></a>
+                <a class="nav-link " href="#about-me">About<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ml-4">
                 <a class="nav-link" href="#">Work</a>
@@ -47,23 +56,81 @@
             <a class="btn btn-outline-success btn-lg" href="#" role="button">Learn more</a>
           </div>
     </div>
-    <div class="container">
+    <!-- <div class="container mb-3">
         <div class="row">
-            <div class="col-md-6">
-              <p class="h2 pl-4">About Me</p>
-              <p class="pl-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nesciunt vero molestias reprehenderit vel adipisci est, quo natus reiciendis inventore odio iure ducimus iusto eligendi! Provident, nemo. Aliquam libero numquam modi velit nam, ab labore doloremque eaque! Enim nobis possimus nam, sunt officia molestias corporis accusantium maxime eveniet ratione, fuga, quia harum doloribus. Non nam laborum vitae aspernatur neque iusto quas dolorum ea ducimus? Harum corrupti minima distinctio consequatur aut sunt iste, a facilis molestiae quis sed provident officia error atque impedit tempora libero. Dolores quaerat sit minima ab mollitia? Officia optio blanditiis dicta praesentium facilis consectetur, veniam culpa sapiente!</p>
+            <div class="col-md-6 pl-4">
+              <p class="h2 ">About Me</p>
+              <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nesciunt vero molestias reprehenderit vel adipisci est, quo natus reiciendis inventore odio iure ducimus iusto eligendi! Provident, nemo. Aliquam libero numquam modi velit nam, ab labore doloremque eaque! Enim nobis possimus nam, sunt officia molestias corporis accusantium maxime eveniet </p>
+              <p>Here are the technologies I recently used:</p>
+              
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex justify-content-center">
                 <img src="./girma.jpg" alt="Girma">
             </div>
         </div>
+    </div> -->
+    <div class="container" id="about-me">
+        <div class="card mb-3">
+            <div class="row no-gutters">              
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title h2">About Me</h5>
+                  <p class="card-text">I am a full stack web developer. I specialize in the MERN stack. I am quite facinated by React and all its cool features. I enjoy working on both the front-end and the back end. At the back-end Node js is my cup of coffee. I am in to Javascript all the way.</p>
+                  <p class="card-text">Some of the technologies I recently used include:</p>
+                  <ul>
+                    <div class="container">
+                     <div class="row">
+                      <div class="col-md-6">
+                        <li>Javascript (ES6)</li>
+                        <li>React</li>
+                        <li>Node js</li>                      
+                        <li>Bootstrap</li>                      
+                      </div>                                       
+                      <div class="col-md-6">
+                        <li>mongoDB</li>
+                        <li>MySQL</li>
+                        <li>HTML</li>                      
+                        <li>CSS</li>                      
+                     </div>                                    
+                    </div>
+                  </ul>
+                  <p class="card-text"><small class="text-muted">Contact me for more information or check my resume out</small></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="./image/girma.jpg" class="card-img" alt="Girma Ebssa">
+              </div>
+            </div>
+          </div>
     </div>
+    <div class="ui grid">
+        <div class="four wide column">
+          <div class="ui vertical fluid tabular menu">
+            <a class="item">
+              Bio
+            </a>
+            <a class="item">
+              Pics
+            </a>
+            <a class="item">
+              Companies
+            </a>
+            <a class="item active">
+              Links
+            </a>
+          </div>
+        </div>
+        <div class="twelve wide stretched column">
+          <div class="ui segment">
+            This is an stretched grid column. This segment will always match the tab height
+          </div>
+        </div>
+      </div>
     
    
       
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

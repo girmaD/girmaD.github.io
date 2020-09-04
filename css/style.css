@@ -1,5 +1,6 @@
 body,
-.jumbotron {
+.jumbotron,
+.card {
 	background-color: rgb(10, 25, 47);
 }
 .jumbotron p:first-of-type {
@@ -9,10 +10,36 @@ body,
 	color: rgb(204, 214, 246);
 }
 #full-stack,
-.pl-4 {
+.pl-4,
+.mb-3 {
 	color: rgb(204, 214, 246);
 }
 div img {
-	height: 350px;
-	width: 400px;
+	height: 21rem;
+	width: 28rem;
+}
+h5::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 300px;
+	background-color: rgb(48, 60, 85);
+	position: relative;
+	top: -15px;
+	margin-left: 160px;
+}
+
+li {
+	list-style: none;
+}
+.col-md-6 li::before {
+	content: "▹ ";
+	/* position: absolute;
+	left: 0px;	 */
+	color: #7700ff;
+	font-size: 14px;
+	line-height: 12px;
+}
+.work-info {
+	max-width: 700px;
 }
