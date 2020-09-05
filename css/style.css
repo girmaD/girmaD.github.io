@@ -1,7 +1,11 @@
+body {
+	position: relative;
+}
 body,
 .jumbotron,
 .card {
 	background-color: rgb(10, 25, 47);
+	font-family: 'Montserrat', sans-serif;
 }
 .jumbotron p:first-of-type {
 	color: rgb(100, 255, 218);
@@ -11,7 +15,9 @@ body,
 }
 #full-stack,
 .pl-4,
-.mb-3 {
+.mb-3,
+h5,
+.fa-code {
 	color: rgb(204, 214, 246);
 }
 div img {
@@ -26,20 +32,48 @@ h5::after {
 	background-color: rgb(48, 60, 85);
 	position: relative;
 	top: -15px;
-	margin-left: 160px;
+	left: 160px;
 }
-
-li {
-	list-style: none;
+.dash::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 400px;
+	background-color: rgb(48, 60, 85);
+	position: relative;
+	top: -15px;
+	left: 270px;
 }
-.col-md-6 li::before {
+.dash-dash::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 400px;
+	background-color: rgb(48, 60, 85);
+	position: relative;
+	top: -15px;
+	left: 170px;
+}
+#about-me li {
+	list-style-type: square;
+}
+/* .col-md-6 li::before {
 	content: "▹ ";
-	/* position: absolute;
-	left: 0px;	 */
+	position: absolute;
+	left: 0px;
 	color: #7700ff;
 	font-size: 14px;
 	line-height: 12px;
-}
+} */
 .work-info {
 	max-width: 700px;
+}
+.accordion {
+	color: rgb(204, 214, 246);
+}
+.btn-block {
+	color: #28a745;
+}
+.jumbotron:hover {
+	font-weight: 800;
 }
