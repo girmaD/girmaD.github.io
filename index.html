@@ -6,15 +6,14 @@
     <title>Girma's Page</title>   
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    
     <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body >
-    
+<body data-spy="scroll" data-target="#navbarTogglerDemo02">    
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark mb-3">
         <div class="container">
             <a class="navbar-brand" href="#">Girma</a>
@@ -24,17 +23,17 @@
         
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active ml-2">
+                <li class="nav-item ml-2">
                 <a class="nav-link " href="#about-me">About<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ml-4">
-                <a class="nav-link" href="#accordionExample">Work</a>
+                <a class="nav-link" href="#work">Work</a>
                 </li>
                 <li class="nav-item ml-4">
-                <a class="nav-link" href="#accordionExample2">Education</a>
+                <a class="nav-link" href="#education">Education</a>
                 </li>
                 <li class="nav-item ml-4">
-                <a class="nav-link" href="#">My Projects</a>
+                <a class="nav-link" href="#projects">My Projects</a>
                 </li>           
              </ul>
             <form class="form-inline my-2 my-lg-0 ml-4">
@@ -90,8 +89,8 @@
           </div>
     </div>
 <!-- work experience starts here -->
-    <div class="container mt-5">
-      <h5 class="card-title h2 dash">Work Experience</h5>
+    <div  class="container mt-5">
+      <h5 id="work" class="card-title h2 dash">Work Experience</h5>
       <div class="accordion" id="accordionExample">
       <div class="card">
         <div class="card-header" id="headingOne">
@@ -138,8 +137,8 @@
       </div>
     </div>
     <!-- education starts here -->
-    <div class="container mt-5">
-      <h5 class="card-title h2 dash-dash">Education</h5>
+    <div  class="container mt-5">
+      <h5 id="education" class="card-title h2 dash-dash">Education</h5>
       <div class="accordion" id="accordionExample2">
       <div class="card">
         <div class="card-header" id="headingOne">
@@ -186,21 +185,17 @@
       </div>
     </div>
     <!-- My projects section starts here -->
-    
-    
-      
-        
-        
+    <div class="container" id="projects">
+
+    </div>
      
-     
-  
- 
-    
-    
    
-      
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- Bootstrap Core Javascript. putting the code here will make the page load faster -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      $('body').scrollspy({ target: '#navbarTogglerDemo02', offset: 100 })
+    </script>
 </body>
 </html>
